@@ -1,0 +1,67 @@
+COmandos GIT aula 16/03/2018
+
+mkdir: cannot change permissions of '/dev/shm': Permission denied
+mkdir: cannot change permissions of '/dev/mqueue': Permission denied
+'C:\Windows\system32\drivers\etc\hosts' -> '/etc/hosts'
+'C:\Windows\system32\drivers\etc\protocol' -> '/etc/protocols'
+'C:\Windows\system32\drivers\etc\services' -> '/etc/services'
+'C:\Windows\system32\drivers\etc\networks' -> '/etc/networks'
+ln: failed to create hard link 'F:\GIT\mingw64/libexec/git-core/dlls-copied' => 'F:\GIT\mingw64//bin/git.exe': Operation not permitted
+
+Aluno@Aluno-PC MINGW64 /
+$ ls
+bin/  dev/  git-bash.exe*  LICENSE.txt  post-install.bat  projetos/        tmp/
+cmd/  etc/  git-cmd.exe*   mingw64/     proc/             README.portable  usr/
+
+Aluno@Aluno-PC MINGW64 /
+$ cd projetos/
+
+Aluno@Aluno-PC MINGW64 /projetos
+$ ls
+p1/
+
+Aluno@Aluno-PC MINGW64 /projetos
+$ cd p1
+
+Aluno@Aluno-PC MINGW64 /projetos/p1
+$ git config --global user.name "biancapastos"
+
+Aluno@Aluno-PC MINGW64 /projetos/p1
+$ git config --global user.email "biancapastos12@gmail.com"
+
+Aluno@Aluno-PC MINGW64 /projetos/p1
+$ git clone https://github.com/biancapastos/dtw.git
+Cloning into 'dtw'...
+warning: You appear to have cloned an empty repository.
+
+Aluno@Aluno-PC MINGW64 /projetos/p1
+$ git add index.php
+fatal: Not a git repository (or any of the parent directories): .git
+
+Aluno@Aluno-PC MINGW64 /projetos/p1
+$ cd dtw
+
+Aluno@Aluno-PC MINGW64 /projetos/p1/dtw (master)
+$ git add index.php
+
+Aluno@Aluno-PC MINGW64 /projetos/p1/dtw (master)
+$ git commit -m "Mensagem de atualizacao"
+[master (root-commit) fbb7113] Mensagem de atualizacao
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.php
+
+Aluno@Aluno-PC MINGW64 /projetos/p1/dtw (master)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+Aluno@Aluno-PC MINGW64 /projetos/p1/dtw (master)
+$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 261 bytes | 32.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/biancapastos/dtw.git
+ * [new branch]      master -> master
+
+Aluno@Aluno-PC MINGW64 /projetos/p1/dtw (master)
+$git push
+
